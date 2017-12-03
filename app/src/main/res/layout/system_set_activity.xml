@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    >
+    <ImageView
+        android:layout_row="0"
+        android:layout_column="0"
+        android:layout_columnSpan="4"
+        android:layout_marginLeft="310dp"
+        android:id="@+id/wifi_state4"
+        app:srcCompat="@drawable/wifi04" />
+    <TextView
+        android:layout_row="0"
+        android:layout_column="0"
+        android:layout_columnSpan="4"
+        android:text="步进电机电源"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="15dp"/>
+    <ImageView
+        android:layout_row="0"
+        android:layout_column="0"
+        android:layout_columnSpan="4"
+        android:layout_marginLeft="120dp"
+        android:id="@+id/MotorPower4"
+        />
+    <TextView
+        android:layout_row="0"
+        android:layout_column="0"
+        android:layout_columnSpan="4"
+        android:text="故障调速电源"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        android:layout_marginLeft="170dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="15dp"/>
+    <ImageView
+        android:layout_row="0"
+        android:layout_column="0"
+        android:layout_columnSpan="4"
+        android:layout_marginLeft="260dp"
+        android:id="@+id/FaultPower4"
+      />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="1"
+        android:layout_column="0"
+        android:text="上升速率:"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="15sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="3"
+        android:layout_column="0"
+        android:text="允许档位:"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="15sp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"/>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="4"
+        android:layout_column="0"
+        android:text="飞车转速:"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+
+        android:layout_marginBottom="15sp"
+        android:layout_marginLeft="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="5"
+        android:layout_column="0"
+        android:text="最大步数:"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"/>
+    <ImageButton
+        android:layout_row="1"
+        android:layout_column="1"
+        app:srcCompat="@drawable/down"
+        android:layout_height="40dp"
+        android:layout_width="40dp"
+        android:id="@+id/RiseRate_down" />
+
+    <ImageButton
+        android:layout_row="3"
+        android:layout_column="1"
+        android:layout_height="40dp"
+        android:layout_width="40dp"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/down"
+        android:id="@+id/PermitGear_dwon"
+        android:layout_marginBottom="10dp"/>
+    <ImageButton
+        android:id="@+id/RunawaySpeed_down"
+        android:layout_row="4"
+        android:layout_column="1"
+        android:layout_height="40dp"
+        android:layout_width="40dp"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/down" />
+    <ImageButton
+        android:id="@+id/MaxStep_down"
+        android:layout_row="5"
+        android:layout_column="1"
+        android:layout_height="40dp"
+        android:layout_width="40dp"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/down" />
+
+    <EditText
+        android:layout_width="15mm"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_column="2"
+        android:layout_row="1"
+        android:id="@+id/RiseRate4"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        />
+    <EditText
+        android:layout_width="15mm"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_column="2"
+        android:layout_row="2"
+        android:id="@+id/AdjRange"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/black"
+        />
+    <EditText
+        android:layout_width="15mm"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_column="2"
+        android:layout_row="3"
+        android:id="@+id/PermitGear4"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/black"
+        />
+    <EditText
+        android:layout_width="15mm"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_column="2"
+        android:layout_row="4"
+        android:id="@+id/RunawaySpeed4"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        />
+    <EditText
+        android:layout_width="15mm"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_column="2"
+        android:layout_row="5"
+        android:id="@+id/MaxStep4"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        />
+
+    <ImageButton
+        android:id="@+id/RiseRate_up"
+        android:layout_row="1"
+        android:layout_column="3"
+        android:layout_height="40dp"
+        android:layout_width="40dp"
+        app:srcCompat="@drawable/up"
+        android:layout_marginLeft="15dp"/>
+
+    <ImageButton
+        android:id="@+id/AdjRange_up"
+        android:layout_row="2"
+        android:layout_column="3"
+        android:layout_height="40dp"
+        android:layout_width="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        app:srcCompat="@drawable/up" />
+
+    <ImageButton
+        android:id="@+id/PermitGear_up"
+        android:layout_row="3"
+        android:layout_column="3"
+        android:layout_height="40dp"
+        android:layout_width="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/up" />
+
+
+    <ImageButton
+        android:layout_row="4"
+        android:layout_column="3"
+        android:layout_height="40dp"
+        android:layout_width="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        app:srcCompat="@drawable/up"
+        android:id="@+id/RunawaySpeed_up"/>
+
+    <ImageButton
+        android:id="@+id/AdjRange_down"
+        android:layout_row="2"
+        android:layout_column="1"
+        app:srcCompat="@drawable/down"
+        android:layout_height="40dp"
+        android:layout_width="40dp"
+        android:layout_marginBottom="10dp"
+         android:layout_marginTop="10dp"/>
+
+    <Button
+        android:text=" 保  存  "
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/SettingSave"
+        android:layout_row="6"
+        android:layout_columnSpan="2"
+        android:gravity="fill"
+        android:layout_column="0"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="25dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="2"
+        android:layout_column="0"
+        android:text="整定范围:"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="15sp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"/>
+
+
+
+    <Button
+        android:text="  返  回  "
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/SettingReturn3"
+        android:layout_row="6"
+        android:layout_column="2"
+        android:layout_columnSpan="3"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="60dp"/>
+
+    <ImageButton
+        android:id="@+id/MaxStep_up"
+        android:layout_row="5"
+        android:layout_column="3"
+        android:layout_height="40dp"
+        android:layout_width="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/up" />
+
+
+</GridLayout>
